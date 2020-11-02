@@ -8,7 +8,7 @@ if (!isset($result))
 if(!isset($_POST['Nume']) || !isset($_POST['Prenume']) || !isset($_POST['Email']))
 {
 	$result->status = "Error";
-	$result->message = "Fuck you.";
+	$result->message = "Error 1.";
 
 	echo json_encode($result);
 	exit();
@@ -22,7 +22,7 @@ try {
 		if (!$database_connection->query($db_query)) 
 		{ 
 			$result->status = "Error";
-			$result->message = "FUCK U";
+			$result->message = "Error 2";
 
 			echo json_encode($result);
 		}
